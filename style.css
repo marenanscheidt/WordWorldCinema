@@ -1,0 +1,141 @@
+
+#body {
+  position: absolute;
+  width: 1200px;
+  height: 3500px;
+  background-color: #CBDFDE;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  position: relative;
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.flip-container2 {
+  position: relative;
+	perspective: 1000px;
+  top: 600px
+}
+	/* flip the pane when hovered */
+	.flip-container2:hover .flipper2, .flip-container2.hover .flipper2 {
+		transform: rotateY(180deg);
+	}
+
+.flip-container2, .front2, .back2 {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper2 {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front2, .back2 {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front2 {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back2 {
+	transform: rotateY(180deg);
+}
+
+
+
+.flip-container3 {
+  position: relative;
+	perspective: 1000px;
+  top: 1200px
+}
+	/* flip the pane when hovered */
+	.flip-container3:hover .flipper3, .flip-container3.hover .flipper3 {
+		transform: rotateY(180deg);
+	}
+
+.flip-container3, .front3, .back3 {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper3 {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front3, .back3 {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front3 {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back3 {
+	transform: rotateY(180deg);
+}
